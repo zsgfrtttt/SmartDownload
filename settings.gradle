@@ -1,0 +1,9 @@
+rootProject.name = "OkDowner"
+include ':app'
+include ':okdownload'
+include ':okdownload-breakpoint-sqlite'
+include ':okdownload-connection-okhttp'
+include ':okdownload-filedownloader'
+include ':okdownload-process'
+include ':sample'
+include ':okdownload-kotlin-enhance'

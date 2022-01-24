@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.csz.sample">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application>
+        <activity
+            android:name="com.liulishuo.okdownload.sample.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.liulishuo.okdownload.sample.BunchActivity" />
+        <activity android:name="com.liulishuo.okdownload.sample.ContentUriActivity" />
+        <activity android:name="com.liulishuo.okdownload.sample.EachBlockProgressActivity" />
+        <activity android:name="com.liulishuo.okdownload.sample.NotificationActivity" />
+        <activity android:name="com.liulishuo.okdownload.sample.QueueActivity" />
+        <activity android:name="com.liulishuo.okdownload.sample.SingleActivity" />
+
+        <provider
+            android:name="com.liulishuo.okdownload.OkDownloadProvider"
+            android:authorities="com.csz.sample" />
+    </application>
+
+</manifest>
